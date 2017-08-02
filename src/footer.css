@@ -1,0 +1,204 @@
+.footer_wrap{
+   width: 100%;
+    background: black;
+    font-family: 微软雅黑;
+}
+.f_con{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 12vh;
+    box-sizing: border-box;
+}
+.f_title{
+    width: 500px;
+    margin: 130px  auto 0 auto;
+}
+.f_title p{
+    width: 50px;
+    height:1px;
+    background: #888888;
+    margin: 0 70px 0 70px ;
+}
+.f_title p:nth-child(1){
+    float: left;
+}
+.f_title p:nth-child(3){
+    float: right;
+}
+.f_title div:nth-child(2){
+    width: 130px;
+    margin: -30px auto;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.f_title div:nth-child(2) span{
+    font-size: 13px;
+    color: #888;
+}
+.F_inp_list{
+    margin-top: 30px ;
+}
+.F_inp_list li:first-child{
+    margin-left: 3vw;
+}
+.F_inp_list li{
+    width: 23vw;
+    float: left;
+    margin-right: 3vw;
+    position: relative;
+}
+.F_inp_list li:last-child{
+    margin: 0;
+}
+.F_inp_list>li>p{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+.F_inp_list li input{
+    width: 100%;
+    height: 50px;
+    background: black;
+    border:1px solid #888;
+    outline: none;
+    text-indent: 1em;
+    font-size: 13px;
+    color: white;
+    transition: .5s;
+}
+.inp{
+    width: 100%;
+    height: 50px;
+    background: black;
+    border:1px solid #888;
+    text-indent: 1em;
+    font-size: 14px;
+    color: white;
+    transition: .5s;
+    line-height: 50px;
+}
+.inp span:nth-child(2){
+    margin-right: 10px;
+    margin-top: 17px;
+    float: right;
+}
+.opt{
+    width: 100%;
+    height: 0;
+    background: #CFCFCF;
+    overflow: auto;
+    color: #333;
+    transition: .5s;
+    position: absolute;
+}
+.opt p{
+    width: 100%;
+    text-align: left;
+    text-indent: 2em;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+.opt p:hover{
+    color: white;
+    background: #FF8A00;
+}
+.inp:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 5px #fff,0 0 5px green;
+}
+.F_inp_list li input:focus{
+    border: 1px solid white;
+    box-shadow: 0 0 5px #fff,0 0 5px green;
+}
+.sex{
+  position: absolute;
+    right: 1px;
+    width: 70px;
+    margin-top: 1px;
+    height:48px;
+    background: #000;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.sex:hover{
+    background: #888;
+    color: white;
+}
+.subto{
+    width: 70px;
+    height:70px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-align: center ;
+    line-height: 70px;
+    margin: 50px auto;
+    position: relative;
+}
+.subto p{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    border-radius: 50%;
+   background: #66BC23;
+    transform: scale(0);
+    transition: .5s;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+.subto:hover p{
+    transform: scale(1);
+}
+.f_bottom{
+    padding-bottom: 50px;
+}
+.f_bottom p{
+    font-size: 13px;
+    color: #ccc;
+    text-align: center;
+    line-height: 20px;
+}
+@media only screen and (max-width: 992px){
+    .f_con{
+        width: 100%;
+    }
+    .F_inp_list li{
+        width: 80%;
+        float: none;
+        margin-left: 10%;
+        margin-top: 30px;
+    }
+    .f_title p{
+        margin:0  ;
+    }
+    .f_title div:nth-child(2){
+      width: 56vw;
+        font-size: 18px;
+
+    }
+    .opt{
+        position: relative;
+    }
+    .F_inp_list li:last-child{
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+    .F_inp_list li:first-child{
+        margin-left: 10%;
+    }
+    .f_title{
+     width: 60vw;margin: 0 auto;
+    }
+}

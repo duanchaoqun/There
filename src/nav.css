@@ -1,0 +1,170 @@
+
+.D_wrap{
+    font-family: 微软雅黑;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.D_nav{
+    width: 100%;
+    height:90px;
+    background: transparent;
+    position: fixed;
+    transition: .5s;
+}
+.logo{
+    width: 200px;
+    height:80px;
+    background: #ccc;
+    margin-top: 5px;
+    float: left;
+    margin-left: 100px;
+}
+.NavWord{
+    width: 40%;
+    float: left;
+    margin-left: 4%;
+}
+.NavWord li{
+    float: left;
+    font-size: 14px;
+    color: #ccc;
+    padding:40px 10px 0 5%;
+    cursor: pointer;
+    transition: .3s;
+}
+.NavWord li:hover .Nav_buttom{
+    transform: rotateY(0deg)
+}
+.NavWord li:hover{
+    color: #60C10A;
+}
+.Nav_buttom{
+    margin-top: 5px;
+    width: 100%;
+    height: 3px;
+    background: #60C10A;
+    transition: .3s;
+    transform: rotateY(90deg);
+}
+.tel{
+    width: 25%;
+    height:80px;
+    line-height: 80px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #ccc;
+}
+.tel span{
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: #16D700;
+}
+.icon{
+    display: none;
+}
+.nav_sm{
+    display: none;
+}
+@media only screen and (max-width: 992px){
+    .NavWord{
+        display: none;
+    }
+    .tel{
+        display: none;
+    }
+    .nav_btn{
+        display: block;
+        font-size: 26px;
+        color: #ccc;
+        float: right;
+        margin-right: 20px;
+        margin-top: 30px;
+        position: relative;
+        width: 30px;
+        height:30px;
+    }
+    .nav_btn span{
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #0EDB00;
+        position: absolute;
+        top: 16px;
+        left: 0;
+        transition: background-color 0.2s ease-out 0.1s;
+    }
+    .nav_btn span:before{
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #0EDB00;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        transition: transform 0.2s ease-out,top 0.2s ease 0.2s;
+        transform: rotate(0deg);
+    }
+    .nav_btn span:after{
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: #0EDB00;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        transition: transform 0.2s ease-out,top 0.2s ease 0.2s;
+        transform: rotate(0deg);
+    }
+    .nav_btn .toggl{
+        background:transparent;
+    }
+    .nav_btn .toggl:before{
+        transition: top 0.2s ease, transform 0.2s ease-out 0.2s;
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .nav_btn .toggl:after{
+        transition: top 0.2s ease, transform 0.2s ease-out 0.2s;
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .nav_sm{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: #333333;
+        margin-top: -100vh;
+        transition: .5s;
+        padding-top: 20vh;
+    }
+    .nav_icon_sm{
+       position: absolute;
+    }
+    .nav_icon_sm li{
+        float: left;
+        font-size: 18px;
+        color: #ccc;
+        width: 30vw;
+        height: 20vh;
+        text-align: center;
+        line-height: 20vh;
+        margin-top: 20px;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .nav_icon_sm li:hover{
+        color: white;
+    }
+    .nav_icon_sm li span{
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+}
